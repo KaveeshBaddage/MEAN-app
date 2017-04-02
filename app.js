@@ -11,7 +11,12 @@ mongoose.connect(config.database);
 
 //On Connection
 mongoose.connection.on('connected',() => {
-	console.log('coneected to the database');
+	console.log('connected to the database');
+});
+
+//On Error
+mongoose.connection.on('error',(err) => {
+	console.log('Database Error'+err);
 });
 
 const app = express();
