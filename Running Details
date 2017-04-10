@@ -1,0 +1,17 @@
+Start MongoDB services
+	sudo service mongod start
+
+Open mongo terminal
+	mongo
+
+Show MongoDB databases
+	show dbs
+
+Use a database
+	use <databaseName>
+
+Show collections inside considering database
+	show collections
+
+View internal content of collection
+	db.<collectionName>.find().pretty()
