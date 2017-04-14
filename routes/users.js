@@ -55,7 +55,7 @@ router.post('/authenticate', (req, res , next) => {
 		}
 	});
 	});
-}
+});      
 
 //Profile
 router.get('/profile', (req, res , next) => {
