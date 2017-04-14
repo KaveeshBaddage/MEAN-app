@@ -58,9 +58,9 @@ router.post('/authenticate', (req, res , next) => {
 });      
 
 //Profile
-router.get('/profile', (req, res , next) => {
-	res.send('PROFILE');
+router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res , next) => {
+	res.json({user: req.user});
 });
 
-
+//To protect route need to use this second parameter - passport.authenticate('jwt', {session:false})
 module.exports = router; 
