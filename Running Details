@@ -15,3 +15,9 @@ Show collections inside considering database
 
 View internal content of collection
 	db.<collectionName>.find().pretty()
+
+Run frontend server
+
+go to the inside of angular-src directory and run following code
+	ng serve
+
