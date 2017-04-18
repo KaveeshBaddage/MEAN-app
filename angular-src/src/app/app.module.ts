@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes  } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -13,11 +13,11 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
 const appRoutes: Routes =[
-  {path:'',component: HomeComponent},
-  {path:'register',component: RegisterComponent},
-  {path:'login',component: LoginComponent},
-  {path:'dashboard',component: dashboardComponent},
-  {path:'profile',component: ProfileComponent},
+  {path:'', component: HomeComponent},
+  {path:'register', component: RegisterComponent},
+  {path:'login', component: LoginComponent},
+  {path:'dashboard', component: DashboardComponent},
+  {path:'profile', component: ProfileComponent}
 ]
 
 @NgModule({
@@ -27,7 +27,6 @@ const appRoutes: Routes =[
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    KjComponent,
     DashboardComponent,
     ProfileComponent
   ],
