@@ -21,3 +21,6 @@ Run frontend server
 go to the inside of angular-src directory and run following code
 	ng serve
 
+Create Angular components
+	ng g component <componentName>
+	ex- ng g component login
